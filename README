@@ -1,0 +1,36 @@
+# 
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+#    Author Daniel Guerrero (chancleta at gmail dot com)
+#
+#    This script gather data from Yahoo Weather API and transform it into 
+#    a home made database text file called weather_db2.txt
+#    More info from Yahoo Weather API can be found at:
+#    http://developer.yahoo.com/weather/
+#
+#    This file stores weather data regarding Cities, every city is separated 
+#    with a "|" symbol. Every single data regarding a city is separated 
+#    with a ";" This gives as a structure like:
+#                        City 1      City 2     City 3
+#                     -;-;-;-;-;-|-;-;-;-;-;-|-;-;-;-;-;-|
+#                     -;-;-;-;-;-|-;-;-;-;-;-|-;-;-;-;-;-|
+#                     -;-;-;-;-;-|-;-;-;-;-;-|-;-;-;-;-;-|
+#
+#    From this db we generate the json data weather_json.js
+#    And index.html finish the job by using jquery, jquery.flot.js 
+#    and prototype.js to draw the charts.
+#    More info from this librarys can be found at:
+#    http://code.google.com/p/flot/
+#    http://www.prototypejs.org/
+
