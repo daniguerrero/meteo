@@ -17,7 +17,7 @@
 #    Usage: python weather2.py
 #
 #    Source code from meteo project can be found at:
-#    http://github.com/daporgue/meteo
+#    http://github.com/daniguerrero/meteo
 
 import urllib
 from datetime import datetime, date, time
