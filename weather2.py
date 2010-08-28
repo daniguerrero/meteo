@@ -62,7 +62,7 @@ def putinline(url):
 #column meas, stands for specific meassurement: temp, humidity, preassure...
 #column stamp is the timestamp
 def gen_stamp_data (city,column_meas,column_stamp):
-    dbfile = open('/home/dani/weather/weather_db2.txt','r')
+    dbfile = open('weather_db2.txt','r')
     chain_stamp_data = "" 
     first_round = True
     for line in dbfile:
@@ -119,6 +119,6 @@ var humidity={ "Lyon": { "data":['+humi_lyon+'], "x_field_name": "timestamp", "y
 
 
 if __name__ == "__main__":
-    result = open('/home/dani/weather/weather_db2.txt','a')
+    result = open('weather_db2.txt','a')
     main()
     result.close
